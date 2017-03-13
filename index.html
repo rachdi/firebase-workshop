@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ma 1ère app Firebase</title>
-  </head>
-  <body>
-    <p>Voici ma page</p>
+<head>
+  <meta charset="utf-8">
+  <title>Ma 1ère app Firebase</title>
+</head>
+<body>
+  <p>Voici ma page</p>
 
-    <ul id="my-list">
-      <li>Lire la doc</li>
-    </ul>
-    
-    <form action="" id="mon-formulaire">
-      <input type="text" id="task" name="task" placeholder="Renouveller Tisseo...">
-      <button>Envoyer</button>
-    </form>
+  <ul id="my-list">
+    <li>Lire la doc</li>
+  </ul>
+  
+  <form action="" id="mon-formulaire">
+    <input type="text" id="task" name="task" placeholder="Renouveller Tisseo...">
+    <button>Envoyer</button>
+  </form>
 
-    <div id="my-images">
+  <div id="my-images">
 
-    </div>
+  </div>
 
-    <script src="/index.js"></script>
-  </body>
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_JA2okgdcSUga-Ojowy0PxKMrMF57sk0",
+    authDomain: "tatalist-b118c.firebaseapp.com",
+    databaseURL: "https://tatalist-b118c.firebaseio.com",
+    storageBucket: "tatalist-b118c.appspot.com",
+    messagingSenderId: "490199219043"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/index.js"></script>
+</body>
 </html>
